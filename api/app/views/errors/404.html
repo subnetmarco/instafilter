@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Not Found' /}
+
+<section id="tagline">
+		<div class="row">
+			<div class="column span_12">
+				<h3>Not Found<br />
+				#{if play.mode.name() == 'DEV'}
+		            #{404 result /}
+		        #{/if}
+				</h3>
+			</div>
+		</div>
+</section>

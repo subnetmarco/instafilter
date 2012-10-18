@@ -1,0 +1,12 @@
+.metadata
+deploy
+target
+.settings
+production.properties
+.project
+.classpath
+.DS_Store
+maven-head
+*.pyc
+*.log
+outputapi*

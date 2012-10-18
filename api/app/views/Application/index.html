@@ -1,0 +1,239 @@
+#{extends 'main.html' /}
+#{set title:'Image Filters as a Service' /}
+<section id="tagline">
+		<div class="row">
+			<div class="column span_12">
+				<h3>An easy RESTful API for manipulating images and applying customizable filters in real-time.<br />
+				<span class="pictogram edit_icon"></span> Create your own filters on top of our filters.<br />
+				<span class="pictogram setting_icon"></span> Includes resize, rotate and crop functions among others.
+				</h3>
+			</div>
+		</div>
+	</section>
+	<section id="filters" class="option-set">
+		<div class="row">
+			<div class="column span_12">
+				<a href='#' data-filter="*" class="selected">All</a>
+				<!-- <a href='#' data-filter=".filters"><span class="pictogram gallery_icon"></span>Filters</a> -->
+				<a href='#' data-filter=".lowfilters"><span class="pictogram edit_icon"></span>Advanced Filters</a>
+				<a href='#' data-filter=".collage"><span class="pictogram setting_icon"></span>Functions</a>
+			</div>
+		</div>
+	</section>
+	<section id="portfolio_one">
+		<div class="row" id="isotope">
+			<figure class="filter filters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Black-White">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/blackandwhite.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Black & White</h4>
+						<p>Converts the image colors to shades of grey.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Gamma">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/gamma.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Gamma</h4>
+						<p>Adjusts the gamma, used for changing the brightness of an image.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Noise">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/noise.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Noise</h4>
+						<p>Adds random noise to the image. You can specify the amount and density.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Invert">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/invert.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Invert</h4>
+						<p>Inverts all the pixels of the image.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Mosaic">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/mosaic.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Mosaic</h4>
+						<p>Creates a mosaic effect. You can specify the block's size.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters lowfilters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Custom-HSB">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/hsb.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Custom HSB</h4>
+						<p>Specify custom hue, saturation and brightness levels.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Oil">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/oil.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Oil</h4>
+						<p>Creates an oil painting effect.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters lowfilters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#RGB-Mixer">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/mixchannels.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>RGB Mixer</h4>
+						<p>Mixes RGB channels. For each channel, you can specify how much of the other two channels to mix in.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters lowfilters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Levels">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/levels.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Levels</h4>
+						<p>Adjusts the image levels by moving and stretching the brightness of the image histogram.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Edge-Detection">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/edge.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Edge Detection</h4>
+						<p>Edge detection with a dark background.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Colored-Edge-Detection">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/bump.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Colored Edge Detection</h4>
+						<p>Similar to the Edge detection filter, except with more color.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter filters lowfilters">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Contrast">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/contrast.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Contrast</h4>
+						<p>Changes the gain and bias of the colors in the image.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter collage">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Resize">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/resize.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description">
+						<h4>Resize</h4>
+						<p>Shrinks an image while maintaining its aspect ratio.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter collage">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Crop">
+					<div class="thumbnail" style="margin-top: 30px">
+						<div class="holder"><img src="@{'/public/images/home/crop.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description" style="margin-top:30px;">
+						<h4>Crop</h4>
+						<p>Crops an image in a rectangle, by specifying its size and coordinates.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter collage">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Padding">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/padding.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description" >
+						<h4>Padding</h4>
+						<p>Adds padding around the image. You can specify both the size and the color.</p>
+					</div>
+				</a>
+			</figure>
+			<figure class="filter collage">
+				<a href="https://www.mashape.com/thefosk/instafilter-io#Rotate">
+					<div class="thumbnail">
+						<div class="holder"><img src="@{'/public/images/home/rotate.jpeg'}" alt="" title=""></div>
+					</div>
+					<div class="description" >
+						<h4>Rotate</h4>
+						<p>Rotates the image (by 90, 180, 270 degrees) or flips it horizontally or vertically.</p>
+					</div>
+				</a>
+			</figure>
+		</div>
+	</section>
+	<section id="message">
+		<div class="row">
+			<div class="column span_12">
+				<p><span class="pictogram tag_icon"></span> Easy as $0.01 per filter. Your first 100/Month are free. <a href="https://www.mashape.com/thefosk/instafilter-io" class="button large yellow_alt"><span class="pictogram like_icon"></span>Start hacking</a></p>
+			</div>
+		</div>
+	</section>
+	<section id="features" class="continued">
+		<div class="row">
+			<ul>
+				<li class="column span_4">
+					<h5 class="border"><span class="pictogram setting_icon"></span><b>Client Libraries</b></h5>
+					<p>Client Libraries are available in PHP, Ruby, Python, Java and Objective-C.</p>
+				</li>
+				<li class="column span_4">
+					<h5 class="border"><span class="pictogram time_icon"></span><b>Real-Time</b></h5>
+					<p>Apply filters in real-time in one HTTP request, without waiting for queues or making additional requests.</p>
+				</li>
+				<li class="column span_4">
+					<h5 class="border"><span class="pictogram cloud_icon"></span><b>Distributed on Mashape</b></h5>
+					<p>Instafilter.io runs on Mashape, a reliable API infrastructure that makes it easier to consume and track API usage with nice analytics.</p>
+				</li>
+				<li class="column span_4">
+					<h5 class="border"><span class="pictogram gallery_icon"></span><b>Custom Filers</b></h5>
+					<p>Build your own custom filters by combining existing ones.</p>
+				</li>
+				<li class="column span_4">
+					<h5 class="border"><span class="pictogram gadget_icon"></span><b>Optimized for mobile</b></h5>
+					<p>The API is built with mobile in mind: you can deliver filtered images on Android or iOS using our client libraries.</p>
+				</li>
+				<li class="column span_4">
+					<h5 class="border"><span class="pictogram phone_icon"></span><b>Support</b></h5>
+					<p>Please give me your feedback or contact me on Mashape for immediate support. My mission is to make you happy.</p>
+				</li>
+			</ul>
+		</div>
+	</section>

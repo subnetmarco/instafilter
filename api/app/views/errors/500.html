@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Error' /}
+
+<section id="tagline">
+		<div class="row">
+			<div class="column span_12">
+				<h3>An error occurred<br />
+				#{if play.mode.name() == 'DEV'}
+		            #{500 exception /}
+		        #{/if}
+				</h3>
+			</div>
+		</div>
+</section>

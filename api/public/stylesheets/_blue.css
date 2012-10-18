@@ -1,0 +1,65 @@
+h5.border {
+	border-color: #5dbcfe !important;
+}
+
+#header h1 img {
+	background: #5dbcfe;
+}
+
+.menu li li:hover > a, .menu li li:hover, .menu li li a:focus, .menu li li a:hover, .menu li li a:active {
+	background: #5dbcfe !important; 
+}
+
+#filters a.selected {
+	background: #5dbcfe;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dbcfe', endColorstr='#5dbcfe',GradientType=0 );
+	border-right: 1px solid #5dbcfe;
+	border-bottom: 1px solid #5dbcfe;
+	color: #ffffff;
+}
+
+
+
+#portfolio_one figure a .thumbnail {
+	background: #5dbcfe;
+}
+
+#portfolio_two figure:nth-child(even) a {
+	background: #5dbcfe;
+}
+
+#portfolio_two figure a div h4 {
+	color: #5dbcfe;
+}
+
+#gallery figure a .thumbnail {
+	background: #5dbcfe;
+}
+
+#about #about_box #photo {
+	background: #5dbcfe;
+}
+
+.tweet_list li a:hover {
+	color: #5dbcfe;
+}
+
+h2 span.circle_a, h2 span.circle_c {
+	background: #5dbcfe;
+}
+    
+.latest ul li div.latest_image {
+	background: #5dbcfe;
+}
+
+.latest ul a:hover div.latest_details b {
+	color: #5dbcfe;
+	border-color: #5dbcfe;
+}
+
+.previews figure a .thumbnail {
+	background: #5dbcfe;
+}
+.copyrights a:hover {
+	color: #5dbcfe;
+}
