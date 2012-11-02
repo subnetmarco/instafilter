@@ -13,6 +13,6 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *		/filters/{action}						Api.{action}
-*       /{<([\w\.\-]+\.(do|soap|status|bs)|\w+\.\w+\.html)>controller}      NotFound.handle
+*       /{<([\w\.\-]+\.(do|soap|status|bs|php)|\w+\.\w+\.html)>controller}      NotFound.handle
 *       /{controller}/{action}                  {controller}.{action}
 
