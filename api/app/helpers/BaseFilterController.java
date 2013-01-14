@@ -25,6 +25,8 @@ import java.util.Date;
 
 import javax.transaction.NotSupportedException;
 
+import org.apache.commons.lang.StringUtils;
+
 import jobs.ApplyFilterJob;
 import jobs.ApplyFilterResult;
 
@@ -32,6 +34,7 @@ import exceptions.FileTooBigException;
 import exceptions.NotSupportedFormatException;
 import filters.BaseFilter;
 import filters.FilterOptions;
+import filters.SupportedFormats;
 
 import play.Play;
 import play.libs.F.Promise;
@@ -80,6 +83,15 @@ public class BaseFilterController extends Controller {
 			ApplyFilterResult output = await(now);
 			if (output.getException() != null) {
 				throw output.getException();
+			}
+			String format = null;
+			if (image == null) {
+				format = SupportedFormats.getFormatExtension(url.toString());
+			} else {
+				format = SupportedFormats.getFormatExtension(image.getAbsolutePath());
+			}
+			if (StringUtils.isNotBlank(format)) {
+				response.setHeader("Content-Type", "image/" + format);
 			}
 			response.out = output.getOutput();
 		} catch (Exception e) {

@@ -43,8 +43,12 @@ public class SupportedFormats {
 		}
 	}
 	
+	public static String getFormatExtension(String path) {
+		return FilenameUtils.getExtension(path).toLowerCase().trim();
+	}
+	
 	public static String supportFormat(String path) throws EmptyExtensionException {
-		String extension = FilenameUtils.getExtension(path).toLowerCase().trim();
+		String extension = getFormatExtension(path);
 		if (StringUtils.isBlank(extension)) {
 			throw new EmptyExtensionException();
 		}

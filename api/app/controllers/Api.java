@@ -217,43 +217,6 @@ public class Api extends BaseFilterController {
 		executeFilter(customHSBFilter, options, image, url);
 	}
 
-	// public static void crystallize(String url, Float amount, Float
-	// randomness, String edgeColor, Float edgeThickness, String shape, boolean
-	// fadeEdges) {
-	// try {
-	// if (amount == null) amount = 0f;
-	// if (randomness == null) randomness = 0f;
-	// if (edgeThickness == null) edgeThickness = 0f;
-	// if (StringUtils.isBlank(edgeColor)) edgeColor = "#000000";
-	// int gridType = 2;
-	// if (StringUtils.isBlank(shape)) shape = "";
-	// if ("random".equals(shape.toLowerCase())) {
-	// gridType = 0;
-	// } else if ("square".equals(shape.toLowerCase())) {
-	// gridType = 1;
-	// } else if ("hexagonal".equals(shape.toLowerCase())) {
-	// gridType = 2;
-	// } else if ("octagonal".equals(shape.toLowerCase())) {
-	// gridType = 3;
-	// } else if ("triangular".equals(shape.toLowerCase())) {
-	// gridType = 4;
-	// } else {
-	// throw new Exception("Invalid shape parameter value");
-	// }
-	//
-	// new CrystallizeFilter().filter(
-	// new URL(url),
-	// response.out,
-	// new FilterOptions().add(FilterOption.AMOUNT, amount).add(
-	// FilterOption.RANDOMNESS, randomness).add(FilterOption.COLOR,
-	// getRGB(edgeColor)).add(FilterOption.THICKNESS,
-	// edgeThickness).add(FilterOption.GRID_TYPE,
-	// gridType).add(FilterOption.FADE_EDGES, fadeEdges));
-	// } catch (Exception e) {
-	// handleError(e);
-	// }
-	// }
-
 	public static void noise(File image, String url, Integer amount,
 			Float density, String distribution, boolean monochrome) {
 		int d = 0;

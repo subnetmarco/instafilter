@@ -27,8 +27,6 @@ import javax.imageio.ImageIO;
 
 import com.jhlabs.image.CellularFilter;
 
-import apple.awt.CTrayIconPeer;
-
 import filters.BaseFilter;
 import filters.FilterOption;
 import filters.FilterOptions;
