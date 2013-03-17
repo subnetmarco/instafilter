@@ -12,7 +12,13 @@
 	<artifactId>instafilter-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>instafilter-api</name>
-
+	<repositories>
+		<repository>
+			<id>mashape-snapshots</id>
+			<url>https://github.com/Mashape/MVNRepo/raw/master/snapshots</url>
+		</repository>
+	</repositories>
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.jhlabs</groupId>
@@ -25,7 +31,6 @@
 			<version>4.2</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>

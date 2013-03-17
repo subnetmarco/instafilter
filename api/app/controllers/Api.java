@@ -18,57 +18,26 @@
  ******************************************************************************/
 package controllers;
 
-import helpers.BaseFilterController;
-import helpers.Error;
-
-import java.awt.Color;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-
-import javax.imageio.ImageIO;
-
-import jobs.ApplyFilterJob;
-import jobs.ApplyFilterResult;
-
-import org.apache.commons.lang.StringUtils;
-import org.imgscalr.Scalr.Rotation;
-import org.omg.CORBA.DynAnyPackage.Invalid;
-
-import com.jhlabs.image.CellularFilter;
-
-import exceptions.EmptyExtensionException;
-import exceptions.NotSupportedFormatException;
-import filters.BaseFilter;
 import filters.FilterOption;
 import filters.FilterOptions;
 import filters.collage.CropFilter;
 import filters.collage.PaddingFilter;
 import filters.collage.ResizeFilter;
 import filters.collage.RotateFilter;
-import filters.collage.RotationOption;
 import filters.effects.BlackAndWhiteFilter;
 import filters.effects.ChannelMixFilter;
-import filters.effects.CrystallizeFilter;
 import filters.effects.CustomHSBFilter;
 import filters.effects.GainFilter;
 import filters.effects.GammaFilter;
 import filters.effects.LevelsFilter;
 import filters.effects.MosaicFilter;
 import filters.effects.NoiseFilter;
+import helpers.BaseFilterController;
 
-import play.data.validation.Max;
-import play.data.validation.Min;
-import play.libs.F.Promise;
-import play.mvc.Controller;
+import java.awt.Color;
+import java.io.File;
+
+import org.imgscalr.Scalr.Rotation;
 
 public class Api extends BaseFilterController {
 
