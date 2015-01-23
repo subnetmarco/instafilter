@@ -38,7 +38,7 @@ import com.google.gson.JsonArray;
 
 public class FirewallConfiguration {
 
-	private static final String FIREWALL_IPS = "https://www.mashape.com/docs/firewall/ips-json";
+	private static final String FIREWALL_IPS = "http://docs.mashape.com/firewall-ips.json";
 	private static List<String> ips;
 	
 	static {
