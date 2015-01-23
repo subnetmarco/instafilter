@@ -70,7 +70,6 @@ public class FirewallConfiguration {
 			Gson gson = new Gson();
 			ips = new ArrayList<String>();
 			ips = gson.fromJson(IOUtils.toString(url.openStream()), List.class);
-			System.out.println(ips);
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
