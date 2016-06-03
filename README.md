@@ -2,12 +2,8 @@
 
 An easy RESTful API for manipulating images and applying customizable filters in real-time.
 
-Also available through a RESTful API at [instafilter.io](http://www.instafilter.io).
-
 # How to use it
 The application requires the [Play Framework v1.2.5](http://www.playframework.org/download)
-
-I am hosting a cloud version of Instafilter at [instafilter.io](http://www.instafilter.io). You can use it in the cloud and forget about hosting and maintaining it. I will obviously charge for it but the pricing is flexible, so contact me for high volume discounts.
 
 # Support
 You can contribute to the project by opening a GitHub issue, submit a pull request, or contact me on twitter [@thefosk](https://twitter.com/thefosk) for feedback.
